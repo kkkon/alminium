@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GEM=`which gem1.9.3`
+GEM=`which gem1.9`
 
 if [ "$GEM" = "" ]
 then
@@ -32,6 +32,8 @@ then
     rm -fr /etc/apache2/sites-enabled/redmine
     rm -fr /etc/httpd/conf.d/redmine.conf
     rm -fr /etc/httpd/conf.d/vcs.conf
+    rm -fr /opt/local/apache2/conf/redmine.conf
+    rm -fr /opt/local/apache2/conf/vcs.conf
 fi
 
 echo ""
